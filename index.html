@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Marks Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Marks Dashboard</h1>
+    
+    <div class="form">
+      <label for="name">Student Name:</label>
+      <input type="text" id="name" placeholder="Enter student name">
+      
+      <label for="math">Math Marks:</label>
+      <input type="number" id="math" placeholder="Enter Math marks">
+      
+      <label for="science">Science Marks:</label>
+      <input type="number" id="science" placeholder="Enter Science marks">
+      
+      <label for="english">English Marks:</label>
+      <input type="number" id="english" placeholder="Enter English marks">
+      
+      <button onclick="calculateMarks()">Calculate</button>
+    </div>
+    
+    <div class="results">
+      <h2>Results:</h2>
+      <p id="studentName"></p>
+      <p id="totalMarks"></p>
+      <p id="averageMarks"></p>
+      <p id="grade"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
